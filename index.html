@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Paper Title — Project Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 id="title">AGRI-BT Robot: LLM-Driven Behaviour Trees and VLM Perception for Intelligent Autonomous Greenhouse Operations</h1>
+      <p id="authors">Muhammad Salman a , Muhayy Ud DIn a, Irfan Hussain a, ,* a Khalifa University Center for Autonomous Robotic Systems (KUCARS), Khalifa University of Science and Technology, Abu Dhabi, United Arab Emirates</p>
+      <div class="links">
+        <a id="paper-link" href="assets/manuscript.pdf" target="_blank">📄 Paper (PDF)</a>
+        <a id="github-link" href="#">📁 GitHub</a>
+        <a id="dataset-link" href="#">📊 Dataset</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="abstract">
+      <h2>Abstract</h2>
+      <p>The increasing adoption of autonomous robots in greenhouse and precision agriculture highlights a
+key challenge, enabling non-expert users, such as farmers and field operators, to specify complex
+tasks intuitively while ensuring reliable robotic execution in dynamic environments. Most existing
+agricultural robotics solutions rely on preprogrammed routines or handcrafted task logic, which
+limits their flexibility and adaptability to changing crop and environmental conditions. In addition,
+many learning-based planning approaches lack explicit structure and perceptual grounding, reducing
+their suitability for long-horizon agricultural operations. This paper addresses these limitations by
+proposing a unified language and vision driven task planning framework for autonomous greenhouse
+robotics. A domain-adapted large language model (CodeLlama-7B), fine-tuned using Low-Rank
+Adaptation (LoRA), translates natural-language agricultural instructions into executable, XML-based
+Behaviour Trees. The planner is integrated with a CLIP-based vision language model to enable
+perception-aware decision making during task execution. A new dataset of 1,187 pairs of task
+descriptions and expert-validated Behaviour Trees is curated by extending an existing robotics dataset
+to the agricultural domain, covering navigation, crop inspection, watering, harvesting, and disease
+detection of which navigation, inspection, and disease detection are experimentally validated.The
+framework is evaluated in an ROS 2-based simulated greenhouse across three task categories:
+optimised navigation, selective inspection, and vision-based disease detection. The results show
+100% structural (XML) validity, 87.5% semantic correctness, and 82.0% task alignment, yielding
+an overall weighted validation score of 91.4%. While high accuracy is observed for simpler tasks,
+complex perception action sequences remain more challenging, indicating opportunities for further
+improvement in multi-stage task decomposition. Instruction-specific planning reduces navigation
+tracking error by 35.1% (from 0.208m to 0.135m), demonstrating that linguistic precision directly
+improves robotic execution quality. The proposed approach provides a practical, scalable interface for
+flexible and reliable agricultural automation.</p>
+    </section>
+
+    <section id="read-paper">
+      <h2>Read the paper</h2>
+      <p>You can read the full manuscript below or open it in a new tab.</p>
+      <div class="pdf-wrap">
+        <iframe src="assets/manuscript.pdf" title="Manuscript PDF"></iframe>
+      </div>
+      <p><a href="assets/manuscript.pdf" target="_blank">Open PDF in a new tab</a></p>
+    </section>
+
+    <section id="figures">
+      <h2>Figures</h2>
+      <div class="grid">
+        <figure>
+          <img src="assets/first_image.png" alt="Figure 1">
+        </figure>
+        <figure>
+          <img src="assets/real_greenhouse_env.png" alt="Figure 2">
+        </figure>
+      </div>
+    </section>
+
+    <section id="quick-start">
+      <h2>Quick Start</h2>
+      <pre><code>python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+python analysis_script.py
+</code></pre>
+    </section>
+
+    <section id="resources">
+      <h2>Resources</h2>
+      <ul>
+        <li><a href="#">Code repository</a></li>
+        <li><a href="#">Dataset / Benchmarks</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">Created with a simple static template. Replace content with your paper's info.</div>
+  </footer>
+</body>
+</html>
